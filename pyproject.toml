@@ -8,6 +8,7 @@ authors = [
 ]
 requires-python = ">=3.14"
 dependencies = [
+    "cryptography>=50.0.2",
     "pydantic>=2.14.0",
 ]
 
@@ -17,3 +18,8 @@ oop-2027 = "oop_2027:main"
 [build-system]
 requires = ["uv_build>=0.13.0,<0.14.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
